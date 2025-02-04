@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do app</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div id="manage-books">
+    <h2 class="title">welcome to BOOK BASH</h2>
+    <div id="adding-book">
+        <input type="text" placeholder="add your book ..." id="book-name">
+        <input type="number" placeholder="total pages" id="book-pages">
+        <input type="date" id="deadline">
+        <button id="add-btn" class="btn">Add</button>
+        <button id="edit-btn" class="btn">Edit</button>
+    </div>
+    <div id="book-filtering">
+        <button class="btn all filter-books" data-filter="all">All</button>
+        <button class="btn pending filter-books" data-filter="pending">Pending</button>
+        <button class="btn completed filter-books" data-filter="completed">Completed</button>
+        <button class="btn delete" id="delete-all">Delete All</button>
+    </div>
+</div>
+
+<div id="alert-message"></div>
+
+<div id="books-chart">
+    <table id="table">
+        <thead>
+            <tr>
+                <th>book</th>
+                <th>total pages</th>
+                <th>deadline</th>
+                <th>How many pages you've read?</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<p id="author">📚Designed by Yahya Noori.📚</p>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
